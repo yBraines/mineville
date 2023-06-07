@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --vh-size: 4.5vw;
+}
+
+body {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  height: 15vh;
+  font-size: var(--vh-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+header img {
+  height: calc(var(--vh-size) * 2);
+}
+
+#support {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#support a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  color: greenyellow;
+  font-size: calc(var(--vh-size) - 3vw);
+  padding: calc(var(--vh-size) - 3vw);
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+main {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--vh-size);
+}
+
+main button {
+  padding: var(--vh-size);
+  font-size: calc(var(--vh-size) - 1vw);
+  background-color: rgb(20, 20, 20);
+  color: rgb(220, 220, 220);
+  border-radius: 25px;
+  border: 2px solid rgb(210, 210, 210);
+  transition: background-color 0.4s; 
+}
+main button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media (min-width: 1300px) {
+  :root {
+    --vh-size: 3.5vw;
+  }
+}
