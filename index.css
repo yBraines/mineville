@@ -46,6 +46,9 @@ header img {
   border-radius: 25px;
   text-decoration: none;
 }
+#support a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
 main {
   width: 100vw;
